@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    //directUrl = http://www.baidu.cn is 302, change to http://www.tianya.cn is work fine
+    //directUrl = http://www.baidu.cn is 302, change to http://www.tianya.cn is work fine 
     @SofaReference(jvmFirst = false, binding = @SofaReferenceBinding(bindingType = "rest", directUrl = "http://www.baidu.cn"))
     private SimpleApi simpleApi;
 
